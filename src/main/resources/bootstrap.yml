@@ -1,0 +1,19 @@
+
+server:
+    port: 8888
+
+spring:
+    application:
+        name: SpringCloudConfigServer
+    profiles:
+        active: native
+    cloud:
+        config:
+            server:
+                git:
+                    uri: classpath:/config_repo
+                    #file://${user.home}/config_repo
+                    #file://${HOME}/config-repo
+                    #classpath:/config
+                    clone-on-start: true
+
