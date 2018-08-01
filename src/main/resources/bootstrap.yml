@@ -16,4 +16,10 @@ spring:
                     #file://${HOME}/config-repo
                     #classpath:/config
                     clone-on-start: true
+    security:
+        user:
+            name: root
+            password: blabla
+
+
 
