@@ -28,6 +28,7 @@ logging:
     level:
         root: INFO
 
+management.se
 
 
 
