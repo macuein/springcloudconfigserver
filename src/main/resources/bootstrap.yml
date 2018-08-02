@@ -10,16 +10,25 @@ spring:
     cloud:
         config:
             server:
-                git:
-                    uri: classpath:/config_repo
+                native:
+                    search-locations: classpath:/config_repo
+#                git:
+#                    uri: file://classpath:/config_repo
                     #file://${user.home}/config_repo
                     #file://${HOME}/config-repo
                     #classpath:/config
-                    clone-on-start: true
+#                    clone-on-start: true
     security:
+        basic:
+            enabled: false
         user:
             name: root
             password: blabla
+logging:
+    level:
+        root: INFO
+
+
 
 
 
